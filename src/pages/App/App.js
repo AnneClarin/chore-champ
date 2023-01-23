@@ -12,7 +12,8 @@ export default function App() {
 
   return (
     <main className="App">
-      ChoreChamp
+      <span className='even'>Chore</span>
+      <span className='odd'>Champ</span>
       { user ?
         <Routes>
           <Route path="/" element={<ChoreListPage user={user} setUser={setUser} />} />

@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.even, .odd {
+  font-weight: bolder;
+  font-size: 500%;
+}
+
+.even {
+  color: blue;
+}
+
+.odd {
+  color: red;
+}
