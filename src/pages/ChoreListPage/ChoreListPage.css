@@ -1,0 +1,22 @@
+.ChoreListPage {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+div {
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.user-stats, .chores-todo {
+    border: 2px solid blue;
+}
+
+.completed-chores {
+    border: 2px solid red;
+}
+

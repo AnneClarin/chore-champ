@@ -36,19 +36,21 @@ export default class SignUpForm extends Component {
   render() {
     const disable = this.state.password !== this.state.confirm
     return (
-      <main className='SignUpPage'>
-        <form autoComplete="off" onSubmit={this.handleSubmit}>
-          <label>Name</label>
-          <input type="text" name="name" value={this.state.name} onChange={this.handleChange} autoComplete="off" required />
-          <label>Email</label>
-          <input type="email" name="email" value={this.state.email} onChange={this.handleChange} autoComplete="off" required />
-          <label>Password</label>
-          <input type="password" name="password" value={this.state.password} onChange={this.handleChange} autoComplete="off" required />
-          <label>Confirm</label>
-          <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} autoComplete="off" required />
-          <button type="submit" disabled={disable}>Sign Up</button>
-        </form>
-        <p className="error-message">&nbsp;{this.state.error}</p>
+      <main>
+        <div className='SignUpForm'>
+          <form autoComplete="off" onSubmit={this.handleSubmit}>
+            <label>Name</label>
+            <input type="text" name="name" value={this.state.name} onChange={this.handleChange} autoComplete="off" required />
+            <label>Email</label>
+            <input type="email" name="email" value={this.state.email} onChange={this.handleChange} autoComplete="off" required />
+            <label>Password</label>
+            <input type="password" name="password" value={this.state.password} onChange={this.handleChange} autoComplete="off" required />
+            <label>Confirm</label>
+            <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} autoComplete="off" required />
+            <button type="submit" disabled={disable}>Sign Up</button>
+          </form>
+          <p className="error-message">&nbsp;{this.state.error}</p>
+        </div>
       </main>
     )
   };

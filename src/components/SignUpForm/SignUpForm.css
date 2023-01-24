@@ -1,5 +1,17 @@
-.SignUpPage {
+.SignUpForm {
     color: blue;
     margin: 5%;
     display: flex;
+}
+
+.SignUpForm > input {
+    border-color: red;
+    color: blue;
+    margin: 5px;
+}
+
+.SignUpForm > button {
+    border-color: red;
+    color: white;
+    background-color: red;
 }

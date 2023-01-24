@@ -9,6 +9,7 @@ import NewChorePage from "../NewChorePage/NewChorePage";
 
 export default function App() {
   const [user, setUser] = useState(getUser());
+  const [chores, setChores] = useState([])
 
   return (
     <main className="App">
@@ -16,8 +17,8 @@ export default function App() {
       <span className='odd'>Champ</span>
       { user ?
         <Routes>
-          <Route path="/" element={<ChoreListPage user={user} setUser={setUser} />} />
-          <Route path="/chores/new" element={<NewChorePage/>} />
+          <Route path="/chores" element={<ChoreListPage user={user} setUser={setUser} chores={chores} setChores={setChores} />} />
+          <Route path="/chores/new" element={<NewChorePage chores={chores} setChores={setChores}/>} />
         </Routes>
         :
         <AuthPage setUser={setUser}/>

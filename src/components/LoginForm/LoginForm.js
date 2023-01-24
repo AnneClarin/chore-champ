@@ -1,7 +1,5 @@
 import './LoginForm.css'
 
-// LoginForm.jsx
-
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
 
@@ -29,7 +27,7 @@ export default function LoginForm({ setUser }) {
 
   return (
     <div>
-      <div className="form-container">
+      <div className="LoginForm">
         <form autoComplete="off" onSubmit={handleSubmit}>
           <label>Email</label>
           <input type="text" name="email" value={credentials.email} onChange={handleChange} required />

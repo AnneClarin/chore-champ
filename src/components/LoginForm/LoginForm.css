@@ -1,0 +1,18 @@
+.LoginForm {
+    color: red;
+    margin: 5%;
+    display: flex;
+}
+
+.LoginForm > form > input {
+    border-color: blue;
+    color: red;
+    margin: 5px;
+}
+
+.LoginForm > form > button {
+    border-color: blue;
+    color: white;
+    background-color: blue;
+    margin: 5px;
+}
