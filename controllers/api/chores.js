@@ -2,7 +2,17 @@ const Chore = require('../../models/chore')
 
 module.exports = {
     index,
-    create
+    create,
+    update
+}
+
+async function index(req, res) {
+    try {
+        const chore = await Chore.find({})
+        res.status(200).json(chore)
+    } catch (err) {
+        res.status(400).json(err)
+    }
 }
 
 async function create(req, res) {
@@ -16,9 +26,12 @@ async function create(req, res) {
     }
 }
 
-async function index(req, res) {
+
+async function update(req, res) {
     try {
-        const chore = await Chore.find({})
+        const chore = await Chore.findById(req.params.id)
+        chore.completed = !chore.completed
+        await chore.save()
         res.status(200).json(chore)
     } catch (err) {
         res.status(400).json(err)

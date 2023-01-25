@@ -12,11 +12,11 @@ div {
     padding: 5px;
 }
 
-.user-stats, .chores-todo {
+.user-stats, .completed-chores {
     border: 2px solid blue;
 }
 
-.completed-chores {
+.chores-todo {
     border: 2px solid red;
 }
 

@@ -24,7 +24,7 @@ export default function NewChorePage({chores, setChores}) {
     evt.preventDefault()
     addChore(chore)
     setChores([...chores, chore])
-    navigate('/chores');
+    navigate('/chores/');
   }
 
 

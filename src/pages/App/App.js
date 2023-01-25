@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from "react";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 
 import ChoreListPage from "../ChoreListPage/ChoreListPage";
@@ -18,7 +18,8 @@ export default function App() {
       { user ?
         <Routes>
           <Route path="/chores" element={<ChoreListPage user={user} setUser={setUser} chores={chores} setChores={setChores} />} />
-          <Route path="/chores/new" element={<NewChorePage chores={chores} setChores={setChores}/>} />
+          <Route path="/chores/new" element={<NewChorePage chores={chores} setChores={setChores} />} />
+          <Route path="/*" element={<Navigate to="/chores" />} />        
         </Routes>
         :
         <AuthPage setUser={setUser}/>
