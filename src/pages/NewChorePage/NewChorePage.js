@@ -40,7 +40,6 @@ export default function NewChorePage({chores, setChores}) {
               <option value="Once" selected>Once</option>
               <option value="Daily">Daily</option>
               <option value="Weekly">Weekly</option>
-              <option value="Bi-Weekly">Bi-Weekly</option>
               <option value="Monthly">Monthly</option>
             </select>
             <label>Duration(mins)</label>
