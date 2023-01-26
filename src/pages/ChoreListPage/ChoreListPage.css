@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap');
+
 .ChoreListPage {
-    height: 100vh;
+    height: 50vh;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
     justify-content: center;
     margin: auto;
-}
+} 
 
 div {
     margin: 5px;
@@ -16,7 +19,22 @@ div {
     border: 2px solid blue;
 }
 
+.user-stats > h1, .completed-chores > h1 {
+    color: red;
+}
+
 .chores-todo {
     border: 2px solid red;
 }
 
+.chores-todo > h1 {
+    color: blue;
+}
+
+h1, h3 {
+    font-family: 'BioRhyme', serif;
+}
+
+ul {
+    padding-left: 0
+}

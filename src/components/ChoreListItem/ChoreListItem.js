@@ -1,6 +1,17 @@
-import "./ChoreListItem.css"
+import "./ChoreListItem.css";
+import { useState } from "react";
 
 export default function ChoreListItem({name, frequency, duration, completed, changeChoreStatus, chore}) {
+    const [isHovering, setIsHovering] = useState(false)
+
+    const handleMouseOver = () => {
+        setIsHovering(true)
+    };
+
+    const handleMouseOut = () => {
+        setIsHovering(false)
+    };
+
     function textStyle() {
         if (completed) {
           return { textDecoration: "line-through" };
@@ -10,15 +21,17 @@ export default function ChoreListItem({name, frequency, duration, completed, cha
       };
   
     return (
-    <div>
-        <div>
+    <div className="ChoreListItem">
+        <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="HoverMainText">
             <li style={textStyle()}>{name}</li>
-            <button id="completedButton" onClick={() => changeChoreStatus(chore)}>{completed ? "x" : "✓"}</button>
+            <button id="completedButton" onClick={() => changeChoreStatus(chore)}>{completed ? "❌" : "✓"}</button>
         </div>
-        <div>
-            <li>{frequency}</li>
-            <li>{duration}</li>
-        </div>
+        {isHovering && (
+            <div className="HoverText">
+                <li>Reoccurs every {frequency}</li>
+                <li>Takes {duration} minutes</li>
+            </div>
+        )}
     </div>
   );
 };

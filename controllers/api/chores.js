@@ -18,7 +18,6 @@ async function index(req, res) {
 async function create(req, res) {
     try {
         req.body.duration = parseInt(req.body.duration)
-        req.body.frequency = parseInt(req.body.frequency)
         const chore = await Chore.create(req.body)
         res.status(200).json(chore)
     } catch (err) {

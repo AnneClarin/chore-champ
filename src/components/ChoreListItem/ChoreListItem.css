@@ -1,0 +1,14 @@
+li {
+    list-style-type: none;
+    position: absolute;
+    width: 50px;
+}
+
+.ChoreListItem {
+    display: flex;
+    margin: 0;
+}
+
+button {
+    margin-left: 50px;
+}

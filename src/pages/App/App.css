@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -37,15 +39,55 @@
   }
 }
 
-.even, .odd {
+.AppLink {
+  text-decoration: none;
   font-weight: bolder;
-  font-size: 500%;
+  font-size: 600%;
+  font-family: 'BioRhyme', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.even {
+.AppLinkText {
+  display: flex;
+  margin: 0;
+}
+
+.m {
+  margin-right: 60px !important;
+}
+
+.AppLinkText > li {
+  list-style: none;
   color: blue;
+  position: relative;
+  z-index: 1;
+  margin-right: 30px;
+  box-sizing:content-box;
 }
 
-.odd {
-  color: red;
+
+.AppLinkText > li:nth-child(2n + 1) {
+  z-index: 3;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 5vw;
+  height: 20px;
+  background: red;
+  border-radius: 20px;
+  animation: stretch 3s linear infinite;
+  z-index: 2;
+}
+
+@keyframes stretch {
+  to {
+    width: 100vw;
+  }
 }

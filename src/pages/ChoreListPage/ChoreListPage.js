@@ -16,6 +16,8 @@ export default function ChoreListPage({user, setUser}) {
     setUser(null)
   };
 
+
+
   async function changeChoreStatus(chore) {
     let choreCopy = {...chore};
     choreCopy.completed = !choreCopy.completed;
@@ -60,21 +62,30 @@ export default function ChoreListPage({user, setUser}) {
     />
   ))
 
+  // schedule.scheduleJob(interval, () => {
+  //   if (chore.frequency.value = 'daily') {
+  //     interval === '00***'
+  //   } else if (chore.frequency.value = 'weekly') {
+  //     interval === ''
+  //   }
+  // })
    
   return (
     <div className='ChoreListPage'>
       <div className="user-stats">
         <h1>{user.name}'s Stats</h1>
+        <h3>Completed: {choresCompleted.length} Chores</h3>
         <button type="submit" onClick={handleLogOut}>Log Out</button>
       </div>
       <div className='chores-todo'>
-        <h1>Chores To Do</h1>
+        <h1>Today's Chores</h1>
         <ul>{choresIncompleteEls}</ul>
         <Link to="/chores/new"><button>Add Chore</button></Link>
       </div>
       <div className='completed-chores'>
         <h1>Completed Chores</h1>
         <ul>{choresCompletedEls}</ul>
+        <Link to="/chores/past"><button>Past Chores</button></Link>
       </div>
     </div>
   )
