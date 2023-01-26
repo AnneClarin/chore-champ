@@ -1,7 +1,8 @@
 import "./ChoreListItem.css";
 import { useState } from "react";
+import {deleteChore} from '../../utilities/chores-service'
 
-export default function ChoreListItem({name, frequency, duration, completed, changeChoreStatus, chore}) {
+export default function ChoreListItem({name, frequency, duration, completed, changeChoreStatus, chore, trigger, setTrigger}) {
     const [isHovering, setIsHovering] = useState(false)
 
     const handleMouseOver = () => {
@@ -10,6 +11,12 @@ export default function ChoreListItem({name, frequency, duration, completed, cha
 
     const handleMouseOut = () => {
         setIsHovering(false)
+    };
+
+    function handleDelete(chore) {
+        deleteChore(chore)
+        console.log(chore)
+        setTrigger(!trigger)
     };
 
     function textStyle() {
@@ -24,12 +31,12 @@ export default function ChoreListItem({name, frequency, duration, completed, cha
     <div className="ChoreListItem">
         <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="HoverMainText">
             <li style={textStyle()}>{name}</li>
-            <button id="completedButton" onClick={() => changeChoreStatus(chore)}>{completed ? "❌" : "✓"}</button>
+            <button id="completedButton" onClick={() => changeChoreStatus(chore)}>{completed ? "❌" : "✔"}</button>
+            <button onClick={() => handleDelete(chore)}>Delete</button>
         </div>
         {isHovering && (
             <div className="HoverText">
-                <li>Reoccurs every {frequency}</li>
-                <li>Takes {duration} minutes</li>
+                <p>Reoccurs {frequency} | Takes {duration} minutes</p>
             </div>
         )}
     </div>

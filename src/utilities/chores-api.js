@@ -12,3 +12,7 @@ export function getAll() {
 export function changeChore(choreData) {
     return sendRequest(`${BASE_URL}/${choreData._id}`, 'PUT', choreData)
 };
+
+export function deleteChore(choreData) {
+    return sendRequest(`${BASE_URL}/${choreData._id}`, 'DELETE')
+};

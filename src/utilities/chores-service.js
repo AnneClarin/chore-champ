@@ -7,6 +7,9 @@ export async function addChore(choreData) {
 
 export async function changeChore(choreData) {
     const chore = await choresAPI.changeChore(choreData)
-    console.log(chore)
     return chore
+}
+
+export async function deleteChore(choreData) {
+    await choresAPI.deleteChore(choreData)
 }

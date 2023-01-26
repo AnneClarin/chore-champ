@@ -37,11 +37,11 @@ export default function NewChorePage({chores, setChores}) {
             <input type="text" name="name" value={chores.name} onChange={handleChange} autoComplete="off" required />
             <label>Frequency</label>
             <select name="frequency" value={chores.frequency} onChange={handleChange} required >
-              <option value="once" selected>Once</option>
-              <option value="daily">Daily</option>
-              <option value="weekly">Weekly</option>
-              <option value="bi-weekly">Bi-Weekly</option>
-              <option value="monthly">Monthly</option>
+              <option value="Once" selected>Once</option>
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Bi-Weekly">Bi-Weekly</option>
+              <option value="Monthly">Monthly</option>
             </select>
             <label>Duration(mins)</label>
             <input type="number" name="duration" value={chores.duration} onChange={handleChange} autoComplete="off" required />

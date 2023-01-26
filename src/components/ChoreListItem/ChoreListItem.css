@@ -9,6 +9,11 @@ li {
     margin: 0;
 }
 
-button {
+#completedButton {
     margin-left: 50px;
+    color: blue;
+}
+
+.HoverText:hover {
+    display: block;
 }

@@ -1,5 +1,5 @@
 import './ChoreListPage.css';
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import * as userService from '../../utilities/users-service';
 import { changeChore } from '../../utilities/chores-service';
@@ -30,7 +30,6 @@ export default function ChoreListPage({user, setUser}) {
     const chores = await choresAPI.getAll()
     const choresCompletedTemp = chores.filter(chore => chore.completed == true)
     const choresIncompleteTemp = chores.filter(chore => chore.completed == false)
-    console.log(choresCompletedTemp)
     setChoresCompleted(choresCompletedTemp)
     setChoresIncomplete(choresIncompleteTemp)
     }
@@ -47,6 +46,8 @@ export default function ChoreListPage({user, setUser}) {
       key={idx}
       changeChoreStatus={changeChoreStatus}
       chore={chore}
+      trigger={trigger}
+      setTrigger={setTrigger}
     />
   ))
 
@@ -59,16 +60,10 @@ export default function ChoreListPage({user, setUser}) {
       key={idx}
       changeChoreStatus={changeChoreStatus}
       chore={chore}
+      trigger={trigger}
+      setTrigger={setTrigger}
     />
   ))
-
-  // schedule.scheduleJob(interval, () => {
-  //   if (chore.frequency.value = 'daily') {
-  //     interval === '00***'
-  //   } else if (chore.frequency.value = 'weekly') {
-  //     interval === ''
-  //   }
-  // })
    
   return (
     <div className='ChoreListPage'>
@@ -85,7 +80,6 @@ export default function ChoreListPage({user, setUser}) {
       <div className='completed-chores'>
         <h1>Completed Chores</h1>
         <ul>{choresCompletedEls}</ul>
-        <Link to="/chores/past"><button>Past Chores</button></Link>
       </div>
     </div>
   )

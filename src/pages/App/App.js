@@ -6,7 +6,6 @@ import { getUser } from '../../utilities/users-service';
 import ChoreListPage from "../ChoreListPage/ChoreListPage";
 import AuthPage from "../AuthPage/AuthPage";
 import NewChorePage from "../NewChorePage/NewChorePage";
-import PastChoresPage from '../PastChoresPage/PastChoresPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -27,13 +26,12 @@ export default function App() {
           <li className='m'>m</li>
           <li>p</li>
         </ul>
-        <div class="line"></div>
+        <div className="line"></div>
       </Link>
       { user ?
         <Routes>
           <Route path="/chores" element={<ChoreListPage user={user} setUser={setUser} chores={chores} setChores={setChores} />} />
           <Route path="/chores/new" element={<NewChorePage chores={chores} setChores={setChores} />} />
-          <Route path="/chores/past" element={<PastChoresPage chores={chores} />} />
           <Route path="/*" element={<Navigate to="/chores" />} />        
         </Routes>
         :
