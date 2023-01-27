@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# **ChoreChamp**  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## General Overview  
+Let's get cleaning! Yikes, that doesn't sound fun (well, to most people at least). With ChoreChamp, become the Champion of your home! You can add chores that need to be done for the day and even get them reoccuring daily, weekly, or monthly. You will be able to see your stats on the left, Today's chores in the middle, and all completed chores on the right. Just login, keep track, and get cleaning!
 
-## Available Scripts
+## Getting Started
+The site can be accessed [here]().
 
-In the project directory, you can run:
+## Screenshots  
+Landing Page:  
+![Landing page]()
+Sign Up Page:  
+![Sign Up Page]()
+Add Chore Page:  
+![Add Chore Page]()
 
-### `npm start`
+Planning (Trello, ERD, Wireframe):
+![Planning](./images/Planning.jpeg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used  
+- HTML
+- CSS
+- JavaScript
+- Mongoose
+- MongoDB
+- Express
+- React
+- Node
+- Heroku
+- node-schedule
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Work  
+- **Add Multiple Users**  
+What better way to get your chores done but by making it a competition? Declare the true ChoreChamp by keeping track of who does what chores and who is doing the most. The champ will be determined at the end of the set period (week or month) and a pre-determined prize can be awarded (maybe getting treated on a night out or no complaints for a day?). 
+- **Goal Model**  
+A goal model will be nice to implement as an aid to determining the ChoreChamp. Could be X chores needing to be done in a week and whoever does the most wins or could be the first to Y number of chores is the winner. The goal could also be implemented for a solo user to determine a nice treat after a busy week or month too!
+- **Email/Text Reminder Notifications**
+In case this app isn't ingrained into your daily routine, a reminder would be handy! It would probably show the chores for that day at the start of your day.

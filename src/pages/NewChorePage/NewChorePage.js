@@ -33,17 +33,23 @@ export default function NewChorePage({chores, setChores}) {
       <h1>Add A New Chore</h1>
       <div className='NewChoreForm'>
           <form autoComplete="off" onSubmit={handleSubmit}>
-            <label>Chore</label>
-            <input type="text" name="name" value={chores.name} onChange={handleChange} autoComplete="off" required />
-            <label>Frequency</label>
-            <select name="frequency" value={chores.frequency} onChange={handleChange} required >
-              <option value="Once" selected>Once</option>
-              <option value="Daily">Daily</option>
-              <option value="Weekly">Weekly</option>
-              <option value="Monthly">Monthly</option>
-            </select>
-            <label>Duration(mins)</label>
-            <input type="number" name="duration" value={chores.duration} onChange={handleChange} autoComplete="off" required />
+            <label>
+              Chore <br/>
+              <input type="text" className="chore-input" name="name" value={chores.name} onChange={handleChange} autoComplete="off" required />
+            </label>
+            <label>
+              Frequency <br/>
+              <select name="frequency" value={chores.frequency} onChange={handleChange} required >
+                <option value="Once" selected>Once</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+              </select>
+            </label>
+            <label>
+              Duration(mins) <br/>
+              <input type="number" name="duration" value={chores.duration} onChange={handleChange} autoComplete="off" required />
+            </label>
             <button type="submit">Add</button>
           </form>
         </div>

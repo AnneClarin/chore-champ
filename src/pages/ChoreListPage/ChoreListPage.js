@@ -69,7 +69,7 @@ export default function ChoreListPage({user, setUser}) {
     <div className='ChoreListPage'>
       <div className="user-stats">
         <h1>{user.name}'s Stats</h1>
-        <h3>Completed: {choresCompleted.length} Chores</h3>
+        <h3>Completed: <span>{choresCompleted.length}</span> {(choresCompleted.length == 1) ? "Chore" : "Chores"}</h3>
         <button type="submit" onClick={handleLogOut}>Log Out</button>
       </div>
       <div className='chores-todo'>

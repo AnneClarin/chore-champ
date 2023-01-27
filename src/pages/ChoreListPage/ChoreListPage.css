@@ -17,24 +17,43 @@ div {
 
 .user-stats, .completed-chores {
     border: 2px solid blue;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+.user-stats, .chores-todo {
+    justify-content: space-between;
 }
 
 .user-stats > h1, .completed-chores > h1 {
     color: red;
+    text-decoration: underline blue;
 }
 
 .chores-todo {
     border: 2px solid red;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
 }
 
 .chores-todo > h1 {
     color: blue;
+    text-decoration: underline red;
 }
 
 h1, h3 {
     font-family: 'BioRhyme', serif;
+    margin: 0;
 }
 
 ul {
-    padding-left: 0
+    padding-left: 0;
+}
+
+.user-stats > h3 > span {
+    color: red;
 }

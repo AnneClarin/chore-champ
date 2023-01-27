@@ -14,18 +14,8 @@ export default function App() {
   return (
     <main className="App">
       <Link to='/chores' className='AppLink'>
-        <ul className='AppLinkText'>
-          <li>C</li>
-          <li>h</li>
-          <li>o</li>
-          <li>r</li>
-          <li>e</li>
-          <li>C</li>
-          <li>h</li>
-          <li>a</li>
-          <li className='m'>m</li>
-          <li>p</li>
-        </ul>
+        <h1 className='Chore'>Chore</h1>
+        <h1 className='Champ'>Champ</h1>
         <div className="line"></div>
       </Link>
       { user ?

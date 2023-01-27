@@ -1,0 +1,28 @@
+.NewChoreForm > form {
+    display: flex;
+    flex-direction: column;
+    width: 50vmin;
+    align-content: center;
+    font-size: 5vmin;
+    border: 1;
+    border: 5px solid blue;
+    outline: 5px solid red;
+    outline-offset: 2vmin;
+    border-radius: 5%;
+    padding: 5vmin;
+    margin: 5vmin;
+}
+
+.NewChoreForm {
+    display: flex;
+    justify-content: center;
+}
+
+.NewChoreForm > form > *{
+    margin: 2vmin;
+}
+
+.NewChoreForm > form > label > select{
+    font-size: 3.5vmin;
+    text-align: center;
+}

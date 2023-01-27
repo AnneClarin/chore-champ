@@ -1,19 +1,37 @@
-li {
-    list-style-type: none;
-    position: absolute;
-    width: 50px;
-}
-
 .ChoreListItem {
     display: flex;
     margin: 0;
+    justify-content: space-evenly;
+    padding: 2vmin;
 }
 
-#completedButton {
-    margin-left: 50px;
+.completedButton {
     color: blue;
+    margin: 0 1vmin;
+    background-image: none !important;
+    width: 5vmin;
+    height: 5vmin;
+    padding: 0.1vmin;
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
 }
 
 .HoverText:hover {
     display: block;
+}
+
+.ChoreListItem > li > p {
+    display:inline;
+    margin-left: 1vmin;
+}
+
+.ChoreListItem > li > p > .first {
+    color: blue;
+    font-weight: bold;
+}
+
+.ChoreListItem > li > p > .second {
+    color: red;
+    font-weight: bold;
 }

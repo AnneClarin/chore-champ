@@ -42,41 +42,21 @@
 .AppLink {
   text-decoration: none;
   font-weight: bolder;
-  font-size: 600%;
+  font-size: 10vmin;
   font-family: 'BioRhyme', serif;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.AppLinkText {
-  display: flex;
   margin: 0;
-}
-
-.m {
-  margin-right: 60px !important;
-}
-
-.AppLinkText > li {
-  list-style: none;
   color: blue;
-  position: relative;
-  z-index: 1;
-  margin-right: 15px;
-}
-
-
-.AppLinkText > li:nth-child(2n + 1) {
-  z-index: 3;
 }
 
 .line {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  left: 20%;
   width: 5vw;
   height: 20px;
   background-color: red;
@@ -88,6 +68,53 @@
 
 @keyframes stretch {
   to {
-    width: 100vw;
+    width: 25vw;
   }
+}
+
+.Chore {
+  letter-spacing: 5px;
+  background-image: linear-gradient(
+    to right,
+    blue 0,
+    #4949FF 22%,
+    #7879FF 45%, 
+    #9EC2FF 50%,
+    #7879FF 55%,
+    #4949FF 78%,
+    blue 100%
+    );
+  color:transparent;
+  -webkit-background-clip:text;
+}
+
+.Champ {
+  letter-spacing: 5px;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%, 
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+    );
+  color:transparent;
+  -webkit-background-clip:text;
+}
+
+button {
+  border-color: black;
+  font-weight: bolder;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%, 
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
 }
