@@ -4,7 +4,7 @@
 Let's get cleaning! Yikes, that doesn't sound fun (well, to most people at least). With ChoreChamp, become the Champion of your home! You can add chores that need to be done for the day and even get them reoccuring daily, weekly, or monthly. You will be able to see your stats on the left, Today's chores in the middle, and all completed chores on the right. Just login, keep track, and get cleaning!
 
 ## Getting Started
-The site can be accessed [here]().
+The site can be accessed [here](https://chore-champ.herokuapp.com/).
 
 ## Screenshots  
 Landing Page:  
