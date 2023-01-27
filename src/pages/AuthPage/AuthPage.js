@@ -9,9 +9,9 @@ export default function AuthPage({ setUser }) {
 
     function makeStyle() {
         if (showLogin) {
-            return { border: "1vmin solid blue", color: "red"}
+            return { border: "5px solid blue", outline: "5px solid red", color: "red"}
         } else {
-            return { border: "1vmin solid red", color: "blue"}
+            return { border: "5px solid red", outline: "5px solid blue", color: "blue"}
         }
     }
     return (

@@ -1,18 +1,26 @@
-.LoginForm {
+.LoginForm > form {
     color: red;
-    margin: 5%;
+    margin-left: 15vmin;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .LoginForm > form > input {
     border-color: blue;
     color: red;
     margin: 5px;
+    width: 50vmin;
 }
 
 .LoginForm > form > button {
-    border-color: blue;
-    color: white;
-    background-color: blue;
-    margin: 5px;
+    border-color: black;
+    color: black;
+    margin: 10px 5px;
+    width: 30vmin;
+}
+
+.LoginForm > form > label {
+    font-weight: bolder;
 }

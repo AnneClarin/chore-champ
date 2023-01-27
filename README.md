@@ -8,11 +8,11 @@ The site can be accessed [here]().
 
 ## Screenshots  
 Landing Page:  
-![Landing page]()
+![Landing page](./images/LandingPage.jpeg)
 Sign Up Page:  
-![Sign Up Page]()
+![Sign Up Page](./images/SignUpPage.jpeg)
 Add Chore Page:  
-![Add Chore Page]()
+![Add Chore Page](./images/AddChorePage.jpeg)
 
 Planning (Trello, ERD, Wireframe):
 ![Planning](./images/Planning.jpeg)

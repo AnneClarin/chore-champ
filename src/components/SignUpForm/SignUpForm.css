@@ -1,17 +1,26 @@
-.SignUpForm {
+.SignUpForm > form {
     color: blue;
-    margin: 5%;
+    margin-left: 15vmin;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.SignUpForm > input {
+.SignUpForm > form > input {
     border-color: red;
     color: blue;
     margin: 5px;
+    width: 50vmin;
 }
 
-.SignUpForm > button {
-    border-color: red;
-    color: white;
-    background-color: red;
+.SignUpForm > form > button {
+    border-color: black;
+    color: black;
+    margin: 10px 5px;
+    width: 30vmin;
+}
+
+.SignUpForm > form > label {
+    font-weight: bolder;
 }

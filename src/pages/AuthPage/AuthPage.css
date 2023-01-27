@@ -1,16 +1,21 @@
 .AuthPage {
-    height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: var(--white);
+    background-color: white;
     border-radius: 2vmin;
+    font-family: 'Quicksand', sans-serif;
   }
   
+.AuthPage div {
+  outline-offset: 2vmin;
+  border-radius: 5%;
+}
+
   .AuthPage h3 {
-    margin-top: 4vmin;
+    align-items: center;
     text-align: center;
-    color: var(--text-light);
-    cursor: pointer;
+    padding: 2vmin;
+    margin: 5vmin;
   }
   

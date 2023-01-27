@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 .App {
   text-align: center;
@@ -108,6 +109,7 @@
 }
 
 button {
+  font-family: 'Quicksand', sans-serif;
   border-color: black;
   font-weight: bolder;
   background-image: linear-gradient(

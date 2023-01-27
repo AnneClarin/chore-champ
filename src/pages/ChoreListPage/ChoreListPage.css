@@ -60,9 +60,9 @@ ul {
 }
 
 .chores-todo > .add-chore > button {
-    width: 50vmin;
+    width: 40vmin;
 }
 
 .user-stats > button {
-    width: 30vmin;
+    width: 20vmin;
 }
