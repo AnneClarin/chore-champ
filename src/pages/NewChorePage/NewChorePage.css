@@ -27,6 +27,12 @@
     margin: 2vmin;
 }
 
+.NewChoreForm > form > label > input, .NewChoreForm > form > label > select {
+    font-family: 'Quicksand', sans-serif;
+    color: blue;
+    border-color: red;
+}
+
 .NewChoreForm > form > label > input {
     width: 30vmin;
 }

@@ -12,6 +12,7 @@
     color: red;
     margin: 5px;
     width: 50vmin;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .LoginForm > form > button {
