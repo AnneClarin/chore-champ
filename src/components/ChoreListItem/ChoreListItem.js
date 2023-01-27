@@ -17,12 +17,25 @@ export default function ChoreListItem({name, frequency, duration, completed, cha
           return { textDecoration: "none", listStyleType: "circle"};
         }
       };
+
+    function durationEdit() {
+      let hours = Math.floor(chore.duration/60)
+      if (chore.duration >= 60 && chore.duration < 120) {
+        return `${hours} hr ${(chore.duration-(hours*60))} mins`
+      } else if (chore.duration >= 120) { 
+        return `${hours} hrs ${(chore.duration-(hours*60))} mins`
+      } else if (chore.duration == 1) {
+        return `${chore.duration} min`
+      } else {
+        return `${chore.duration} mins`
+      }
+    }
   
     return (
     <div className="ChoreListItem">
       <li style={textStyle()}>
         <b>{name}</b>
-        <p>- Reoccurs {frequency} <span className="first">|</span><span className="second">|</span> Takes {duration} minutes</p>
+        <p>- {frequency} <span className="first">|</span><span className="second">|</span> Takes {durationEdit(chore.duration)}</p>
         <button className="completedButton" onClick={() => changeChoreStatus(chore)}>{completed ? "🔙" : "✔"}</button>
         <button className="completedButton" onClick={() => handleDelete(chore)}>❌</button>
       </li>

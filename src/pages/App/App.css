@@ -54,10 +54,10 @@
 
 .line {
   position: absolute;
-  top: 50%;
+  top: 15vmin;
   transform: translateY(-50%);
-  left: 20%;
-  width: 5vw;
+  left: -7vmin;
+  width: 4vw;
   height: 20px;
   background-color: red;
   border-radius: 20px;
@@ -67,12 +67,15 @@
 }
 
 @keyframes stretch {
+  from {background-color: white;}
   to {
-    width: 25vw;
+    width: 74vmin;
+    background-color: red;
   }
 }
 
 .Chore {
+  position: relative;
   letter-spacing: 5px;
   background-image: linear-gradient(
     to right,

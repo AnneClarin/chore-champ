@@ -14,9 +14,11 @@ export default function App() {
   return (
     <main className="App">
       <Link to='/chores' className='AppLink'>
-        <h1 className='Chore'>Chore</h1>
-        <h1 className='Champ'>Champ</h1>
-        <div className="line"></div>
+          <h1 className='Chore'>
+            Chore
+            <div className="line"></div>
+          </h1>
+          <h1 className='Champ'>Champ</h1>
       </Link>
       { user ?
         <Routes>

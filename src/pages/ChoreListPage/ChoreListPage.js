@@ -75,7 +75,7 @@ export default function ChoreListPage({user, setUser}) {
       <div className='chores-todo'>
         <h1>Today's Chores</h1>
         <ul>{choresIncompleteEls}</ul>
-        <Link to="/chores/new"><button>Add Chore</button></Link>
+        <Link className="add-chore" to="/chores/new"><button>Add Chore</button></Link>
       </div>
       <div className='completed-chores'>
         <h1>Completed Chores</h1>

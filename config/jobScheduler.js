@@ -13,7 +13,7 @@ async function getChores () {
             } else if (chore.frequency === "Monthly") {
                 cronEquivalent[chore.frequency] = `0 0 ${new Date(chore.createdAt).getDate()} * *`
             }
-            if (chore.completed === true) {
+            if (chore.completed === true ) {
                 schedule.scheduleJob(cronEquivalent[chore.frequency], () => {
                     chore.completed = false
                     chore.save()

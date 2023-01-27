@@ -20,6 +20,7 @@ async function create(req, res) {
     try {
         req.body.duration = parseInt(req.body.duration)
         const chore = await Chore.create(req.body)
+        console.log("hit chores-controller")
         res.status(200).json(chore)
     } catch (err) {
         res.status(400).json(err)

@@ -1,13 +1,12 @@
 .ChoreListItem {
     display: flex;
-    margin: 0;
+    padding-left: 1.5vmin;
     justify-content: space-evenly;
-    padding: 2vmin;
+    justify-content: left;
 }
 
 .completedButton {
     color: blue;
-    margin: 0 1vmin;
     background-image: none !important;
     width: 5vmin;
     height: 5vmin;
@@ -15,10 +14,6 @@
     box-sizing: border-box;
     background-color: white;
     border: none;
-}
-
-.HoverText:hover {
-    display: block;
 }
 
 .ChoreListItem > li > p {

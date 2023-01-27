@@ -16,11 +16,12 @@ div {
 }
 
 .user-stats, .completed-chores {
-    border: 2px solid blue;
+    border: 3px solid blue;
     border-radius: 5%;
     display: flex;
     flex-direction: column;
     padding-bottom: 5%;
+    align-items: center;
 }
 
 .user-stats, .chores-todo {
@@ -33,7 +34,7 @@ div {
 }
 
 .chores-todo {
-    border: 2px solid red;
+    border: 3px solid red;
     border-radius: 5%;
     display: flex;
     flex-direction: column;
@@ -51,9 +52,17 @@ h1, h3 {
 }
 
 ul {
-    padding-left: 0;
+    padding: 0;
 }
 
 .user-stats > h3 > span {
     color: red;
+}
+
+.chores-todo > .add-chore > button {
+    width: 50vmin;
+}
+
+.user-stats > button {
+    width: 30vmin;
 }

@@ -23,6 +23,7 @@ export default function NewChorePage({chores, setChores}) {
   function handleSubmit(evt) {
     evt.preventDefault()
     addChore(chore)
+    console.log(chore)
     setChores([...chores, chore])
     navigate('/chores/');
   }
@@ -34,20 +35,21 @@ export default function NewChorePage({chores, setChores}) {
       <div className='NewChoreForm'>
           <form autoComplete="off" onSubmit={handleSubmit}>
             <label>
-              Chore <br/>
+              <b>Chore</b> <br/>
               <input type="text" className="chore-input" name="name" value={chores.name} onChange={handleChange} autoComplete="off" required />
             </label>
             <label>
-              Frequency <br/>
+              <b>Frequency</b> <br/>
               <select name="frequency" value={chores.frequency} onChange={handleChange} required >
-                <option value="Once" selected>Once</option>
+                <option selected="true" disabled="disabled">Select One</option>
+                <option value="Once">Once</option>
                 <option value="Daily">Daily</option>
                 <option value="Weekly">Weekly</option>
                 <option value="Monthly">Monthly</option>
               </select>
             </label>
             <label>
-              Duration(mins) <br/>
+              <b>Duration (mins)</b> <br/>
               <input type="number" name="duration" value={chores.duration} onChange={handleChange} autoComplete="off" required />
             </label>
             <button type="submit">Add</button>
