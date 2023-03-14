@@ -9,7 +9,7 @@ module.exports = {
 
 async function index(req, res) {
     try {
-        const chore = await Chore.find({})
+        const chore = await Chore.find({ user: req.user._id })
         res.status(200).json(chore)
     } catch (err) {
         res.status(400).json(err)
